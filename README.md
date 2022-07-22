@@ -1,3 +1,7 @@
+Aplikacja implementuje REST API, które przyjmuje JSON ze współrzędnymi geograficznymi.
+Pozycja jest zapisywana do bazy MySQL, w odpowiedzi przesyłany jest JSON potwierdzający
+zapisanie współrzędnych w bazie.
+
 Aplikacja współpracuje z serwerem MySQL, który należy uruchomić lokalnie na domyślnym 
 porcie 3306, przed pierwszym uruchomieniem na serwerze powinna być założona pusta
 baza danych o nazwie "pos". Logowanie do bazy danych - użytkownik: "root", hasło: ""
@@ -17,6 +21,10 @@ longitude w przedziale -1800000 do 1800000
 Testy jednostkowe aplikacji weryfikują reakcję aplikacji na prawidłowe oraz błędne dane wejściowe.
 
 ___________
+The application implements a REST API that takes JSON with geographic coordinates.
+Coordinates are saved to the MySQL database, and a JSON is sent in response
+to confirm operation.
+
 Application works with MySQL on default port 3306 working on localhost. Before first use
 empty databese named "pos" have to been created. Authentication user: "root", password: ""
 
